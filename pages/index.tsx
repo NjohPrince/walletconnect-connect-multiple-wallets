@@ -1,9 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Web3Modal from "web3modal";
-import WalletConnectProvider from "@walletconnect/web3-provider";
-
 // stylesheet
 import styles from "../styles/Home.module.css";
 
