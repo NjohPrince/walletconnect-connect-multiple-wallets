@@ -1,8 +1,7 @@
-import Web3Modal from "web3modal";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 import WalletLink from "walletlink";
 
-const providerOptions = {
+export const providerOptions = {
   binancechainwallet: {
     package: true,
   },
@@ -15,7 +14,7 @@ const providerOptions = {
   walletlink: {
     package: WalletLink,
     options: {
-      appName: "UnicornEthNetwork NFT Minter",
+      appName: "UnicornEthNetwork",
       infuraId: "74ea3e73497e40838cdd414da3c5133d",
       rpc: "",
       chainId: 4,
@@ -24,10 +23,3 @@ const providerOptions = {
     },
   },
 };
-
-const web3Modal = new Web3Modal({
-  network: "rinkeby",
-  theme: "dark",
-  cacheProvider: true,
-  providerOptions,
-});
